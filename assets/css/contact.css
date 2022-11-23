@@ -1,0 +1,50 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 550px;
+}
+label{
+    position: relative;
+}
+.form p{
+    position: absolute;
+    pointer-events: none;
+
+}
+input[type="text"] {
+    outline: none;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--dark-light--);
+    padding: 1rem;
+    font-weight: 300;
+    width: 100%;
+}
+
+
+.input-move{
+
+    transition: all 0.35s ; 
+    
+}
+
+.form a {
+    width: 1rem;
+}
+
+
+
+/*------media-query----*/
+
+
+@media (min-width: 768px) {
+
+    .input-move{
+        font-size: 1rem;
+        line-height: 0;
+        padding: 0;
+        
+    }
+
+}
